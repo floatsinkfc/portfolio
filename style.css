@@ -384,6 +384,11 @@ section {
 
   }
 
+  .main img{
+    width: 100%; /* Set the width to 100% to make it responsive */
+    max-width: 400px;
+  }
+
   .main h3 {
     font-size: 1.3em;
   }
