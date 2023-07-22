@@ -28,6 +28,12 @@ header {
   z-index: 999;
   align-items: center;
   border-bottom: 3px solid white;
+  transition: transform 0.9s ease;
+}
+
+/* Additional styles for the hidden class */
+header.hidden {
+  transform: translateY(-100%);
 }
 
 .navigation a {
