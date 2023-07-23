@@ -15,7 +15,16 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.1em;
+  display: flex; /* Use flex to align the image and text */
+  align-items: center; 
 }
+
+.logopic {
+  width: 40px; /* Adjust the width of the logo image as needed */
+  height: auto;
+  margin-right: 10px; /* Add some spacing between the logo and the text */
+}
+
 
 header {
   background-color: #1B1C37;
