@@ -851,8 +851,8 @@ textarea.contact-input ~ label {
   }
 
   .main img{
-    width: 100%; /* Set the width to 100% to make it responsive */
-    max-width: 400px;
+    width: 100%; 
+    max-width: 450px;
   }
 
   .main h3 {
@@ -899,7 +899,7 @@ textarea.contact-input ~ label {
 
   .main img{
     width: 100%; /* Set the width to 100% to make it responsive */
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .footer .social-icons a {
