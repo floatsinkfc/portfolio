@@ -729,11 +729,11 @@ textarea.contact-input ~ label {
   }
 
   .main h2{
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
   .main h3 {
-    font-size: 1.5em;
+    font-size: 0.6em;
   }
 
   .main img{
@@ -833,7 +833,7 @@ textarea.contact-input ~ label {
   }
 
   .main h2{
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .main{
     flex-direction: row;
@@ -847,7 +847,7 @@ textarea.contact-input ~ label {
   }
 
   .main h3 {
-    font-size: 1.3em;
+    font-size: 0.9em;
   }
 
   .leftcon{
