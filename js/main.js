@@ -1,5 +1,15 @@
 
 
+// JavaScript
+const hamburgerIcon = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+hamburgerIcon.addEventListener('click', () => {
+  mobileMenu.classList.toggle('menu-open');
+  document.body.classList.toggle('lock-scroll'); // Add or remove the lock-scroll class on the body element
+});
+
+
 
 
 const inputs = document.querySelectorAll('.contact-input');
