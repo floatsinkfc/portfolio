@@ -53,6 +53,7 @@
   }
 }
 
+
 @keyframes typewriter {
   from { width: 0 }
   to { width: 100% }
@@ -134,6 +135,18 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with full opacity (fade in) */
+  }
+}
+
+.fadeIn{
+  animation: fadeIn 1s ease forwards; 
+}
 
 
 .logo {
@@ -162,6 +175,7 @@ header {
 
 .navigation .currentpage{
   text-decoration: underline;
+  font-weight: 1000;
 } 
 
 .navigation a {
@@ -179,9 +193,16 @@ header {
 }
 
 
+
+
+
+
+
 section {
   padding: 100px 200px;
 }
+
+
 
 
 /* Main */
@@ -764,7 +785,7 @@ textarea.contact-input ~ label {
   border: 2px solid var(--text--color);
   box-shadow: 5px 5px var(--text--color);
   min-height: 14em;
-  width: 35em;
+  width: 28em;
   overflow: hidden;
   margin: 20px;
   transition: 0.7s ease;
@@ -1056,17 +1077,6 @@ textarea.contact-input ~ label {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media(max-width: 450px){
@@ -1075,7 +1085,7 @@ textarea.contact-input ~ label {
   }
   .navigation a{
     padding-left: 10px;
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 
   .main img{
@@ -1101,9 +1111,5 @@ textarea.contact-input ~ label {
     font-size: 1.9rem;
     line-height: 1;
   }
-
-
-
-
 
 }

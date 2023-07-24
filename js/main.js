@@ -1,3 +1,7 @@
+
+
+
+
 const inputs = document.querySelectorAll('.contact-input');
 
   inputs.forEach((ipt) => {
