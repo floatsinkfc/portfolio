@@ -887,19 +887,20 @@ textarea.contact-input ~ label {
 
 /* Projects */
 .projects {
-  background-color: var(--main--color); /* the same as background color */
+  background-color: var(--main--color);
   width: 100%;
   min-height: 100vh;
+  padding-top: 30px; /* Add some padding at the top for better spacing */
 }
 
 .content2 {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
-}
-.projects .content2 {
-  margin-top: 30px;
+  gap: 40px; /* Add gap between project cards */
+  max-width: 1200px; /* Limit the maximum width of project cards */
+  margin: 0 auto; /* Center the content horizontally */
+
 }
 
 .project-card {
@@ -907,12 +908,11 @@ textarea.contact-input ~ label {
   border: 2px solid var(--text--color);
   box-shadow: 5px 5px var(--text--color);
   min-height: 14em;
-  width: 28em;
+  width: calc(50% - 20px); 
   overflow: hidden;
-  margin: 20px;
   transition: 0.7s ease;
+  margin-top: 50px;
 }
-
 
 .project-card:hover .project-image {
   opacity: 0.9;
@@ -933,9 +933,7 @@ textarea.contact-input ~ label {
 }
 
 .project-title {
-  display: flex;
-  font-size: 0.6em;
-  justify-content: space-between;
+  font-size: 1.2em; /* Increase font size for better readability */
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 10px;
@@ -946,11 +944,14 @@ textarea.contact-input ~ label {
   text-decoration: none;
   font-size: 1rem;
   color: #0c69a3;
+  display: block; /* Display as block for better spacing */
+  margin-top: 10px; /* Add some spacing between project title and link */
 }
 
 .more-details:hover {
   color: var(--text--color);
 }
+
 
 
 /* Contact */ 
@@ -1034,6 +1035,11 @@ textarea.contact-input ~ label {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+  }
+
+  .project-card {
+    width: calc(50% - 20px); /* Show 2 cards in a row on smaller screens with a small gap */
   }
 
   .more-details{
@@ -1097,6 +1103,8 @@ textarea.contact-input ~ label {
     font-size: 3rem;
   }
 
+  
+
 
   .aboutimg{
     max-width: 300px;
@@ -1107,9 +1115,12 @@ textarea.contact-input ~ label {
     align-items: center;
   }
 
-  .content2{
-    flex-direction: column;
-    align-items: center;
+  .content2 {
+    justify-content: space-around; /* Change to space-around for smaller screens */
+  }
+
+  .project-card {
+    width: calc(50% - 20px); /* Show 2 cards in a row on smaller screens */
   }
   
   .introduction_info{
@@ -1265,6 +1276,10 @@ textarea.contact-input ~ label {
 
   .conInp-wrap{
     grid-column: span 2;
+  }
+
+  .project-card {
+    width: calc(100% - 20px); /* Show 1 card per row on even smaller screens */
   }
 
   .contact-buttons{
