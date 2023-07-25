@@ -1,3 +1,58 @@
+const flipButton = document.getElementById('flipButton');
+let colorsFlipped = false;
+let mainStylesheet;
+
+function createAltStylesheet() {
+  const altStylesheet = document.createElement('link');
+  altStylesheet.rel = 'stylesheet';
+  altStylesheet.href = 'alt-style.css'; // Replace with the name of your alternate stylesheet
+  altStylesheet.id = 'altStylesheet';
+  document.head.appendChild(altStylesheet);
+  localStorage.setItem('colorsFlipped', 'true'); // Store the color mode selection in Local Storage
+  return altStylesheet;
+}
+
+function removeAltStylesheet() {
+  const altStylesheet = document.getElementById('altStylesheet');
+  if (altStylesheet) {
+    altStylesheet.remove();
+  }
+  localStorage.setItem('colorsFlipped', 'false'); // Update the color mode selection in Local Storage
+}
+
+function applyColorMode() {
+  const colorsFlippedStorage = localStorage.getItem('colorsFlipped');
+  if (colorsFlippedStorage === 'true') {
+    createAltStylesheet();
+    colorsFlipped = true;
+    flipButton.innerHTML = '<i class="uil uil-moon"></i>';
+  } else {
+    removeAltStylesheet();
+    colorsFlipped = false;
+    flipButton.innerHTML = '<i class="uil uil-brightness"></i>';
+  }
+}
+
+function flipColors() {
+  if (!colorsFlipped) {
+    mainStylesheet = document.getElementById('mainStylesheet').getAttribute('href');
+    createAltStylesheet();
+    colorsFlipped = true;
+    flipButton.innerHTML = '<i class="uil uil-moon"></i>';
+  } else {
+    removeAltStylesheet();
+    colorsFlipped = false;
+    flipButton.innerHTML = '<i class="uil uil-brightness"></i>';
+  }
+}
+
+flipButton.addEventListener('click', flipColors);
+
+// Apply color mode on page load
+applyColorMode();
+
+
+
 
 
 const hamburgerIcon = document.querySelector('.hamburger');
