@@ -201,7 +201,7 @@ header {
 }
 
 .navigation .currentpage{
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 1000;
 } 
 
@@ -282,7 +282,10 @@ header {
 
 .mobile-menu .currentpage {
   color: var(--text--color--hover);
-  text-decoration: underline;
+}
+
+.mobile-menu a:hover {
+  color: var(--text--color--hover);
 }
 
 .menu-open {
