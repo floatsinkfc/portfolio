@@ -1,13 +1,20 @@
 
 
-// JavaScript
 const hamburgerIcon = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
+const header = document.querySelector('header');
 
 hamburgerIcon.addEventListener('click', () => {
   mobileMenu.classList.toggle('menu-open');
-  document.body.classList.toggle('lock-scroll'); // Add or remove the lock-scroll class on the body element
+  header.classList.toggle('header-active');
+
+  // Toggle the "header-active" class directly on the hamburger icon itself
+  hamburgerIcon.classList.toggle('header-active');
+
+  document.body.classList.toggle('lock-scroll');
 });
+
+
 
 
 

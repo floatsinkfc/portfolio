@@ -300,18 +300,6 @@ header {
   transition: transform 0.4s, opacity 0.4s;
 }
 
-.header-active .line:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.header-active .line:nth-child(2) {
-  opacity: 0;
-}
-
-.header-active .line:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-}
-
 
 /* ------------------------------------------------------ */
 
@@ -1071,9 +1059,6 @@ textarea.contact-input ~ label {
     padding: 10px 0;
   }
 
-  .header-active .navigation {
-    display: block;
-  }
 
   .hamburger {
     display: block;
